@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace GuessGameToluA
 {
-    public partial class Form1 : Form
+    public partial class frmGuessingGame : Form
     {
-        public Form1()
+        public frmGuessingGame()
         {
             InitializeComponent();
+            this.lblCorrect.Hide();
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
