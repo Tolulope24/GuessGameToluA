@@ -16,11 +16,25 @@ namespace GuessGameToluA
         {
             InitializeComponent();
             this.lblCorrect.Hide();
+            this.lblIncorrect.Hide();
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            
+            const int MAX_NUMBER = 10;
+            const int MyNumber = 4;
+
+
+           
+                
+            int MyNumber;
+            MyNumber = int.Parse(txtNumber.Text);
+            if (MyNumber == MAX_NUMBER);
+            this.lblCorrect.Show();
+            if (MyNumber != MAX_NUMBER);
+            this.lblIncorrect.Show();
+
+
         }
     }
 }
