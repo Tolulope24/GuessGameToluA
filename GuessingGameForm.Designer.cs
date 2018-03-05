@@ -33,6 +33,10 @@
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.lblCorrect = new System.Windows.Forms.Label();
             this.lblIncorrect = new System.Windows.Forms.Label();
+            this.picCheckmark = new System.Windows.Forms.PictureBox();
+            this.picRedX = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picCheckmark)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRedX)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCheck
@@ -66,7 +70,7 @@
             // 
             this.lblCorrect.AutoSize = true;
             this.lblCorrect.Font = new System.Drawing.Font("Trajan Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrect.Location = new System.Drawing.Point(390, 81);
+            this.lblCorrect.Location = new System.Drawing.Point(390, 84);
             this.lblCorrect.Name = "lblCorrect";
             this.lblCorrect.Size = new System.Drawing.Size(127, 24);
             this.lblCorrect.TabIndex = 3;
@@ -76,17 +80,39 @@
             // 
             this.lblIncorrect.AutoSize = true;
             this.lblIncorrect.Font = new System.Drawing.Font("Trajan Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncorrect.Location = new System.Drawing.Point(415, 118);
+            this.lblIncorrect.Location = new System.Drawing.Point(415, 84);
             this.lblIncorrect.Name = "lblIncorrect";
             this.lblIncorrect.Size = new System.Drawing.Size(102, 24);
             this.lblIncorrect.TabIndex = 4;
             this.lblIncorrect.Text = "Wrong!!";
             // 
+            // picCheckmark
+            // 
+            this.picCheckmark.Image = global::GuessGameToluA.Properties.Resources.checkmark;
+            this.picCheckmark.Location = new System.Drawing.Point(417, 110);
+            this.picCheckmark.Name = "picCheckmark";
+            this.picCheckmark.Size = new System.Drawing.Size(100, 50);
+            this.picCheckmark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCheckmark.TabIndex = 5;
+            this.picCheckmark.TabStop = false;
+            // 
+            // picRedX
+            // 
+            this.picRedX.Image = global::GuessGameToluA.Properties.Resources.red_x;
+            this.picRedX.Location = new System.Drawing.Point(417, 111);
+            this.picRedX.Name = "picRedX";
+            this.picRedX.Size = new System.Drawing.Size(100, 50);
+            this.picRedX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRedX.TabIndex = 6;
+            this.picRedX.TabStop = false;
+            // 
             // frmGuessingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 199);
+            this.ClientSize = new System.Drawing.Size(600, 172);
+            this.Controls.Add(this.picRedX);
+            this.Controls.Add(this.picCheckmark);
             this.Controls.Add(this.lblIncorrect);
             this.Controls.Add(this.lblCorrect);
             this.Controls.Add(this.txtNumber);
@@ -94,6 +120,8 @@
             this.Controls.Add(this.btnCheck);
             this.Name = "frmGuessingGame";
             this.Text = "Guessing Game";
+            ((System.ComponentModel.ISupportInitialize)(this.picCheckmark)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRedX)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +134,8 @@
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label lblCorrect;
         private System.Windows.Forms.Label lblIncorrect;
+        private System.Windows.Forms.PictureBox picCheckmark;
+        private System.Windows.Forms.PictureBox picRedX;
     }
 }
 

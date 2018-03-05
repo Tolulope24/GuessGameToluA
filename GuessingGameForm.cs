@@ -17,6 +17,8 @@ namespace GuessGameToluA
             InitializeComponent();
             this.lblCorrect.Hide();
             this.lblIncorrect.Hide();
+            this.picCheckmark.Hide();
+            this.picRedX.Hide();
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
@@ -29,14 +31,26 @@ namespace GuessGameToluA
             {
                 this.lblCorrect.Show();
                 this.lblIncorrect.Hide();
+                this.picRedX.Hide();
+
             }
 
             if (UserNumber != MY_NUMBER)
             {
                 this.lblIncorrect.Show();
                 this.lblCorrect.Hide();
-                
+                this.picCheckmark.Hide();
             }
+            if (UserNumber > MY_NUMBER)
+            {
+                this.lblCorrect.Hide();
+                this.lblIncorrect.Hide();
+            }
+
+        }
+
+        private void lblTooManyStudents_Click(object sender, EventArgs e)
+        {
 
         }
     }
