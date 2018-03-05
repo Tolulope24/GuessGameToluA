@@ -21,19 +21,22 @@ namespace GuessGameToluA
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            const int MAX_NUMBER = 10;
-            const int MyNumber = 4;
+            const int MY_NUMBER = 7;
+            int UserNumber;
+            UserNumber = int.Parse(txtNumber.Text);
 
+            if (UserNumber == MY_NUMBER)
+            {
+                this.lblCorrect.Show();
+                this.lblIncorrect.Hide();
+            }
 
-           
+            if (UserNumber != MY_NUMBER)
+            {
+                this.lblIncorrect.Show();
+                this.lblCorrect.Hide();
                 
-            int MyNumber;
-            MyNumber = int.Parse(txtNumber.Text);
-            if (MyNumber == MAX_NUMBER);
-            this.lblCorrect.Show();
-            if (MyNumber != MAX_NUMBER);
-            this.lblIncorrect.Show();
-
+            }
 
         }
     }
